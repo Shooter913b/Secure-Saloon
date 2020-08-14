@@ -102,12 +102,9 @@ class ComponentsNavbar extends React.Component {
               tag={Link}
               id="navbar-brand"
             >
-              <span>BLK• </span>
-              Design System React
+              <span>Secure </span>
+              Saloon
             </NavbarBrand>
-            <UncontrolledTooltip placement="bottom" target="navbar-brand">
-              Designed and Coded by Creative Tim
-            </UncontrolledTooltip>
             <button
               aria-expanded={this.state.collapseOpen}
               className="navbar-toggler navbar-toggler"
@@ -129,7 +126,7 @@ class ComponentsNavbar extends React.Component {
               <Row>
                 <Col className="collapse-brand" xs="6">
                   <a href="#pablo" onClick={e => e.preventDefault()}>
-                    BLK•React
+                    hi
                   </a>
                 </Col>
                 <Col className="collapse-close text-right" xs="6">
@@ -144,42 +141,8 @@ class ComponentsNavbar extends React.Component {
               </Row>
             </div>
             <Nav navbar>
-              <NavItem className="p-0">
-                <NavLink
-                  data-placement="bottom"
-                  href="https://twitter.com/CreativeTim"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  title="Follow us on Twitter"
-                >
-                  <i className="fab fa-twitter" />
-                  <p className="d-lg-none d-xl-none">Twitter</p>
-                </NavLink>
-              </NavItem>
-              <NavItem className="p-0">
-                <NavLink
-                  data-placement="bottom"
-                  href="https://www.facebook.com/CreativeTim"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  title="Like us on Facebook"
-                >
-                  <i className="fab fa-facebook-square" />
-                  <p className="d-lg-none d-xl-none">Facebook</p>
-                </NavLink>
-              </NavItem>
-              <NavItem className="p-0">
-                <NavLink
-                  data-placement="bottom"
-                  href="https://www.instagram.com/CreativeTimOfficial"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  title="Follow us on Instagram"
-                >
-                  <i className="fab fa-instagram" />
-                  <p className="d-lg-none d-xl-none">Instagram</p>
-                </NavLink>
-              </NavItem>
+
+
               <UncontrolledDropdown nav>
                 <DropdownToggle
                   caret
@@ -190,13 +153,9 @@ class ComponentsNavbar extends React.Component {
                   onClick={e => e.preventDefault()}
                 >
                   <i className="fa fa-cogs d-lg-none d-xl-none" />
-                  Getting started
+                  Pages
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-with-icons">
-                  <DropdownItem href="https://demos.creative-tim.com/blk-design-system-react/#/documentation/tutorial">
-                    <i className="tim-icons icon-paper" />
-                    Documentation
-                  </DropdownItem>
                   <DropdownItem tag={Link} to="/register-page">
                     <i className="tim-icons icon-bullet-list-67" />
                     Register Page
@@ -211,25 +170,7 @@ class ComponentsNavbar extends React.Component {
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
-              <NavItem>
-               <Button
-                 className="nav-link d-none d-lg-block"
-                 color="primary"
-                 target="_blank"
-                 href="https://www.creative-tim.com/product/blk-design-system-pro-react?ref=bdsr-user-archive-index-navbar-upgrade-pro"
-               >
-                 <i className="tim-icons icon-spaceship" /> Upgrade to PRO
-               </Button>
-             </NavItem>
-              <NavItem>
-                <Button
-                  className="nav-link d-none d-lg-block"
-                  color="default"
-                  onClick={this.scrollToDownload}
-                >
-                  <i className="tim-icons icon-cloud-download-93" /> Download
-                </Button>
-              </NavItem>
+
             </Nav>
           </Collapse>
         </Container>
