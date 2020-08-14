@@ -32,39 +32,20 @@ import {
   Row,
   Col
 } from "reactstrap";
-import { Map, GoogleApiWrapper } from 'google-maps-react';
 
-const mapStyles = {
-  width: '100%',
-  height: '100%'
-};
-
-export class MapContainer extends Component {
-  render() {
-    return (
-      <Map
-        google={this.props.google}
-        zoom={14}
-        style={mapStyles}
-        initialCenter={{
-         lat: -1.2884,
-         lng: 36.8233
-        }}
-      />
-    );
-  }
-}
-
-export default GoogleApiWrapper({
-  apiKey: 'AIzaSyAyXZ92_9GLBanweL_GLIt3PfkVeEWsy5E'
-})(MapContainer);
 
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footer/Footer.js";
 
 import bigChartData from "variables/charts.js";
+import { GoogleMap, LoadScript } from '@react-google-maps/api';
 
+
+const mapStyles = {
+  width: '100%',
+  height: '100%'
+};
 class LandingPage extends React.Component {
   componentDidMount() {
     document.body.classList.toggle("landing-page");
@@ -72,6 +53,8 @@ class LandingPage extends React.Component {
   componentWillUnmount() {
     document.body.classList.toggle("landing-page");
   }
+
+
   render() {
     return (
       <>
@@ -110,6 +93,7 @@ class LandingPage extends React.Component {
             />
             <div className="content-center">
               <Row className="row-grid justify-content-between align-items-center text-left">
+<<<<<<< HEAD
                 <Col lg="6" md="6">
 
                   <p className="text-white mb-3">
@@ -128,6 +112,8 @@ class LandingPage extends React.Component {
                     </div>
                   </div>
                 </Col>
+=======
+>>>>>>> 89e1eb3c95caec8f6e0a79e6982a361d7cf5d7b3
                 <Col lg="4" md="5">
               <p>Map</p>
                 </Col>
