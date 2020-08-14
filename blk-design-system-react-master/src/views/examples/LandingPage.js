@@ -113,7 +113,7 @@ class LandingPage extends React.Component {
                 <Col lg="6" md="6">
 
                   <p className="text-white mb-3">
-Filters
+
                   </p>
                   <div className="btn-wrapper mb-3">
 
@@ -225,4 +225,4 @@ Filters
   }
 }
 
-export default LandingPage;
+export default LandingPage
