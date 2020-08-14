@@ -39,7 +39,7 @@ import {
 } from "reactstrap";
 
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
+import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footer/Footer.js";
 
 class RegisterPage extends React.Component {
@@ -79,7 +79,7 @@ class RegisterPage extends React.Component {
   render() {
     return (
       <>
-        <ExamplesNavbar />
+        <IndexNavbar />
         <div className="wrapper">
           <div className="page-header">
             <div className="page-header-image" />

@@ -156,6 +156,10 @@ class ComponentsNavbar extends React.Component {
                   Pages
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-with-icons">
+                <DropdownItem tag={Link} to="/components">
+                  <i className="fa fa-home" />
+                  Home
+                </DropdownItem>
                   <DropdownItem tag={Link} to="/register-page">
                     <i className="tim-icons icon-bullet-list-67" />
                     Register Page
