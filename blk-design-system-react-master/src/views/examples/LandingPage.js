@@ -93,8 +93,7 @@ class LandingPage extends React.Component {
             />
             <div className="content-center">
               <Row className="row-grid justify-content-between align-items-center text-left">
-<<<<<<< HEAD
-                <Col lg="6" md="6">
+<Col lg="6" md="6">
 
                   <p className="text-white mb-3">
 
@@ -112,8 +111,7 @@ class LandingPage extends React.Component {
                     </div>
                   </div>
                 </Col>
-=======
->>>>>>> 89e1eb3c95caec8f6e0a79e6982a361d7cf5d7b3
+
                 <Col lg="4" md="5">
               <p>Map</p>
                 </Col>
