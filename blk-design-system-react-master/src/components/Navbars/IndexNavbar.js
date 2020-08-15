@@ -165,8 +165,8 @@ class ComponentsNavbar extends React.Component {
                     Login
                   </DropdownItem>
                   <DropdownItem tag={Link} to="/landing-page">
-                    <i className="fa fa-th-large" />
-                    Dashboard
+                    <i className="fa fa-map" />
+                    Map
                   </DropdownItem>
                   <DropdownItem tag={Link} to="/profile-page">
                     <i className="fa fa-user" />
