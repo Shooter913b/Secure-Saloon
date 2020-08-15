@@ -61,7 +61,7 @@ function MyComponent() {
      position={position}
    >
      <div style={divStyle}>
-       <h1>InfoWindow</h1>
+       <h6 className="Info-Box">InfoWindow</h6>
      </div>
    </InfoWindow>
         <></>
