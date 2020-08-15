@@ -35,6 +35,7 @@ import {
   Col,
   UncontrolledTooltip
 } from "reactstrap";
+import MyComponent from "./Map.js"
 
 class ComponentsNavbar extends React.Component {
   constructor(props) {

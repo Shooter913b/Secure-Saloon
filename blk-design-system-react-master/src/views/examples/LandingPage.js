@@ -32,16 +32,15 @@ import {
   Row,
   Col
 } from "reactstrap";
-import MyComponent from "./Map.js";
 
 
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footer/Footer.js";
-import GoogleApiWrapper from "./Map.js";
+
 import bigChartData from "variables/charts.js";
-import { GoogleMap, LoadScript } from '@react-google-maps/api';
-process.env.REACT_NAV_LOGGING = false;
+
+
 
 const mapStyles = {
   width: '100%',
