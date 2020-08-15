@@ -42,6 +42,7 @@ class Index extends React.Component {
   }
   componentWillUnmount() {
     document.body.classList.toggle("index-page");
+    location.reload()
   }
   render() {
     return (
