@@ -133,7 +133,7 @@ class ProfilePage extends React.Component {
                       <img
                         alt="..."
                         className="img-center img-fluid rounded-circle"
-                        src={require("assets/img/mike.jpg")}
+                        src={require("assets/img/profile.jpg")}
                       />
                       <h4 className="title">Profile</h4>
                     </CardHeader>
@@ -172,7 +172,7 @@ class ProfilePage extends React.Component {
                             onClick={e => this.toggleTabs(e, "tabs", 3)}
                             href="#pablo"
                           >
-                            News
+                            ???
                           </NavLink>
                         </NavItem>
                       </Nav>
