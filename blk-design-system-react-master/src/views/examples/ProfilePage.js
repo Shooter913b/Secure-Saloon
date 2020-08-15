@@ -100,7 +100,7 @@ class ProfilePage extends React.Component {
     });
   };
 
-  location.reload()
+
   render() {
     return (
       <>

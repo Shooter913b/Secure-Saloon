@@ -53,7 +53,7 @@ class LandingPage extends React.Component {
     document.body.classList.toggle("landing-page");
   }
 
-  location.reload()
+  
 
   render() {
     return (

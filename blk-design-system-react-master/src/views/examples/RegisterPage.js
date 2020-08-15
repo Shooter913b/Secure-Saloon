@@ -76,7 +76,7 @@ class RegisterPage extends React.Component {
         "deg)"
     });
   };
-  location.reload()
+
   render() {
     return (
       <>
@@ -170,13 +170,14 @@ class RegisterPage extends React.Component {
                         </Form>
                       </CardBody>
                       <CardFooter>
-                        <Button className="btn-round" color="primary" size="lg">
-                          Sign In
-                        </Button>
+                      <Button className="btn-round" color="primary" size="lg">
+                        Sign In
+                      </Button>
                       </CardFooter>
                     </Card>
                   </Col>
                 </Row>
+
                 <div className="register-bg" />
                 <div
                   className="square square-1"
