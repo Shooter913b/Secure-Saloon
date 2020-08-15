@@ -153,7 +153,7 @@ class ComponentsNavbar extends React.Component {
                   onClick={e => e.preventDefault()}
                 >
                   <i className="fa fa-cogs d-lg-none d-xl-none" />
-                  Pages
+                  <i className="fa fa-bars" />
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-with-icons">
                 <DropdownItem tag={Link} to="/">
@@ -161,16 +161,16 @@ class ComponentsNavbar extends React.Component {
                   Home
                 </DropdownItem>
                   <DropdownItem tag={Link} to="/register-page">
-                    <i className="tim-icons icon-bullet-list-67" />
-                    Register Page
+                    <i className="fa fa-list-ul" />
+                    Register
                   </DropdownItem>
                   <DropdownItem tag={Link} to="/landing-page">
-                    <i className="tim-icons icon-image-02" />
-                    Landing Page
+                    <i className="fa fa-th-large" />
+                    Dashboard
                   </DropdownItem>
                   <DropdownItem tag={Link} to="/profile-page">
-                    <i className="tim-icons icon-single-02" />
-                    Profile Page
+                    <i className="fa fa-user" />
+                    Profile
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
