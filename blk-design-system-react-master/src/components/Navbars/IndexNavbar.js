@@ -172,6 +172,10 @@ class ComponentsNavbar extends React.Component {
                     <i className="fa fa-user" />
                     Profile
                   </DropdownItem>
+                  <DropdownItem tag={Link} to="/post-page">
+                    <i className="fa fa-comment" />
+                    Posts
+                  </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
 

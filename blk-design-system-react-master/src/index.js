@@ -27,16 +27,22 @@ import Index from "views/Index.js";
 import LandingPage from "views/examples/LandingPage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
+import PostPage from "views/examples/PostPage.js";
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-  
+
 
       <Route path="/components" render={props => <Index {...props} />}  />
       <Route
         path="/landing-page"
         render={props => <LandingPage {...props} />}
+
+      />
+      <Route
+        path="/post-page"
+        render={props => <PostPage {...props} />}
 
       />
       <Route
