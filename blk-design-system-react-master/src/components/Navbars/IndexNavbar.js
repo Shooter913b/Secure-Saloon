@@ -126,7 +126,7 @@ class ComponentsNavbar extends React.Component {
               <Row>
                 <Col className="collapse-brand" xs="6">
                   <a href="#pablo" onClick={e => e.preventDefault()}>
-                    hi
+
                   </a>
                 </Col>
                 <Col className="collapse-close text-right" xs="6">
@@ -156,7 +156,7 @@ class ComponentsNavbar extends React.Component {
                   Pages
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-with-icons">
-                <DropdownItem tag={Link} to="/components">
+                <DropdownItem tag={Link} to="/">
                   <i className="fa fa-home" />
                   Home
                 </DropdownItem>
