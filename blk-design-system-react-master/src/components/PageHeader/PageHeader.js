@@ -50,7 +50,9 @@ class PageHeader extends React.Component {
                 src={require("assets/img/Favicon.png")}
               />
             <h1 className="h1-seo" >Griffin</h1>
-            <h5 className="d-none d-sm-block">
+                        <Col md="12">
+            <h4 className="d-none d-sm-block">
+
                 Hello! Welcome to Griffin! We are a community based website. We made Griffin for people in
                 communities to be able to communicate to others their daily activities. It's basically a neighborhood like mini
                 blog for everyone to participate in! We know that since the covid outbreak, it has been certainly hard to
@@ -68,6 +70,7 @@ class PageHeader extends React.Component {
                 give further info. Have fun with this website and welcome to Griffin!
 
             </h4>
+            </Col>
           </div>
         </Container>
       </div>
