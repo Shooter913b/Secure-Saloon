@@ -173,7 +173,7 @@ class ProfilePage extends React.Component {
                             onClick={e => this.toggleTabs(e, "tabs", 3)}
                             href="#pablo"
                           >
-                            Posts
+                            Event
                           </NavLink>
                         </NavItem>
                       </Nav>
@@ -259,18 +259,18 @@ class ProfilePage extends React.Component {
                           <Table className="tablesorter" responsive>
                             <thead className="text-primary">
                               <tr>
-                                <th className="header">Latests Posts</th>
+                                <th className="header">Latest Events</th>
                               </tr>
                             </thead>
                             <tbody>
                               <tr>
-                                <td>Just finished my garden today...</td>
+                                <td>I am hosting a neighborhood party...</td>
                               </tr>
                               <tr>
-                                <td>Guys, there may be a thunder storm...</td>
+                                <td>Be careful, I found a fallen tree near...</td>
                               </tr>
                               <tr>
-                                <td>The kids playing outside...</td>
+                                <td>Anyone want to come over for a...</td>
                               </tr>
                             </tbody>
                           </Table>
