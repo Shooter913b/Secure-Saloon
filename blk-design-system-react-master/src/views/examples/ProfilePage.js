@@ -118,13 +118,10 @@ class ProfilePage extends React.Component {
             <Container className="align-items-center">
               <Row>
                 <Col lg="6" md="6">
-                  <h1 className="profile-title text-left">Bob</h1>
-                  <h5 className="text-on-back">01</h5>
+                  <h1 className="profile-title text-left">Bob Scone</h1>
+                  <h5 className="text-on-back">Bob</h5>
                   <p className="profile-description">
-                    Offices parties lasting outward nothing age few resolve.
-                    Impression to discretion understood to we interested he
-                    excellence. Him remarkably use projection collecting. Going
-                    about eat forty world has round miles.
+                    BobScone123@gmail.com
                   </p>
                   <div className="btn-wrapper profile pt-3">
                   </div>
@@ -137,7 +134,7 @@ class ProfilePage extends React.Component {
                         className="img-center img-fluid rounded-circle"
                         src={require("assets/img/mike.jpg")}
                       />
-                      <h4 className="title">Transactions</h4>
+                      <h4 className="title">Profile</h4>
                     </CardHeader>
                     <CardBody>
                       <Nav
@@ -152,7 +149,7 @@ class ProfilePage extends React.Component {
                             onClick={e => this.toggleTabs(e, "tabs", 1)}
                             href="#pablo"
                           >
-                            Wallet
+                            Info
                           </NavLink>
                         </NavItem>
                         <NavItem>
@@ -163,7 +160,7 @@ class ProfilePage extends React.Component {
                             onClick={e => this.toggleTabs(e, "tabs", 2)}
                             href="#pablo"
                           >
-                            Send
+                            Password
                           </NavLink>
                         </NavItem>
                         <NavItem>
@@ -186,50 +183,65 @@ class ProfilePage extends React.Component {
                           <Table className="tablesorter" responsive>
                             <thead className="text-primary">
                               <tr>
-                                <th className="header">COIN</th>
-                                <th className="header">AMOUNT</th>
-                                <th className="header">VALUE</th>
+                                <th className="header">INFO</th>
+                                <th className="header">ACCOUNT</th>
+                                <th className="header">HOME</th>
                               </tr>
                             </thead>
                             <tbody>
                               <tr>
-                                <td>BTC</td>
-                                <td>7.342</td>
-                                <td>48,870.75 USD</td>
+                                <td>Email/
+                                Address:</td>
+                                <td>BobScone123
+                                @gmail.com</td>
+                                <td>21 Oak Street, San Diego, CA</td>
                               </tr>
                               <tr>
-                                <td>ETH</td>
-                                <td>30.737</td>
-                                <td>64,53.30 USD</td>
+                                <td>Usage:</td>
+                                <td>Member since:
+                                August 16, 2020</td>
+                                <td>Current home since:
+                                July 17, 2016</td>
                               </tr>
                               <tr>
-                                <td>XRP</td>
-                                <td>19.242</td>
-                                <td>18,354.96 USD</td>
+                                <td>Status:</td>
+                                <td>Active</td>
+                                <td>Current Home</td>
                               </tr>
                             </tbody>
                           </Table>
                         </TabPane>
                         <TabPane tabId="tab2">
                           <Row>
-                            <Label sm="3">Pay to</Label>
+                            <Label sm="3">•</Label>
                             <Col sm="9">
                               <FormGroup>
                                 <Input
-                                  placeholder="e.g. 1Nasd92348hU984353hfid"
+                                  placeholder="Current Password"
                                   type="text"
                                 />
                                 <FormText color="default" tag="span">
-                                  Please enter a valid address.
+                                  Type in current password
                                 </FormText>
                               </FormGroup>
                             </Col>
                           </Row>
                           <Row>
-                            <Label sm="3">Amount</Label>
+                            <Label sm="3">•</Label>
                             <Col sm="9">
                               <FormGroup>
-                                <Input placeholder="1.587" type="text" />
+                                <Input placeholder="New Password" type="text" />
+                              </FormGroup>
+                            </Col>
+                          </Row>
+                          <Row>
+                            <Label sm="3">•</Label>
+                            <Col sm="9">
+                              <FormGroup>
+                                <Input placeholder="Rewrite New Password" type="text" />
+                                <FormText color="default" tag="span">
+                                  Make sure passwords match
+                                </FormText>
                               </FormGroup>
                             </Col>
                           </Row>
@@ -238,7 +250,7 @@ class ProfilePage extends React.Component {
                             color="primary"
                             type="submit"
                           >
-                            <i className="tim-icons icon-send" />
+                            <i className="fa fa-check" />
                           </Button>
                         </TabPane>
                         <TabPane tabId="tab3">
