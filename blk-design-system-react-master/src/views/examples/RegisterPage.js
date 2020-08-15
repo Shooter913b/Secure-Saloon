@@ -76,7 +76,7 @@ class RegisterPage extends React.Component {
         "deg)"
     });
   };
-  location.reload()
+
   render() {
     return (
       <>
