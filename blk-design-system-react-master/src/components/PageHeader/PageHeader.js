@@ -17,7 +17,18 @@
 */
 import React from "react";
 // reactstrap components
-import { Container } from "reactstrap";
+import {
+  Button,
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  CardTitle,
+  ListGroupItem,
+  ListGroup,
+  Container,
+  Row,
+  Col } from "reactstrap";
 
 class PageHeader extends React.Component {
   render() {
@@ -56,7 +67,7 @@ class PageHeader extends React.Component {
                 in a form we provide. 3. We will either approve of this form/deny which will be told to you via email. Once approved we will
                 give further info. Have fun with this website and welcome to Griffin!
 
-            </h5>
+            </h4>
           </div>
         </Container>
       </div>
