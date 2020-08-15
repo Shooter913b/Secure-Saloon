@@ -34,7 +34,11 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem
+  DropdownItem,
+  FormGroup,
+  Label,
+  Input,
+  FormText
 } from "reactstrap";
 
 // core components
@@ -96,7 +100,7 @@ class LandingPage extends React.Component {
             />
             <div className="content-center">
               <Row className="row-gridr">
-              <Col lg="1" md="1">
+              <Col lg="2" md="1">
               <UncontrolledDropdown>
     <DropdownToggle caret data-toggle="dropdown">
         Filters
@@ -108,11 +112,35 @@ class LandingPage extends React.Component {
     </DropdownMenu>
 </UncontrolledDropdown>
               </Col>
-                </Row>
-                <Row className="row-grid align-items-center">
-<Col lg="12" md="12">
+              <Col lg="6" md="6">
+              <form>
+    <FormGroup>
 
+
+          <Input type="select" name="select" id="exampleSelect1">
+            <option>Caution</option>
+            <option>Events</option>
+
+          </Input>
+
+
+    </FormGroup>
+    </form>
+              </Col>
+              <Col lg="2" md="2">
+              <Button>Add Marker</Button>
+              </Col>
+                </Row>
+                <Row className=" ">
+
+
+
+<Col lg="13" md="13">
+<Card>
+      <CardBody>
 <MyComponent/>
+</CardBody>
+    </Card>
 
                 </Col>
 
