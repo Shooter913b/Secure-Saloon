@@ -36,7 +36,7 @@ class Footer extends React.Component {
         <Container>
           <Row>
             <Col md="3">
-              <h1 className="title">Secure•Saloon</h1>
+              <h1 className="title">Secure•Street</h1>
 
             </Col>
 

@@ -103,7 +103,7 @@ class ComponentsNavbar extends React.Component {
               id="navbar-brand"
             >
               <span>Secure </span>
-              Saloon
+              Street
             </NavbarBrand>
             <button
               aria-expanded={this.state.collapseOpen}
