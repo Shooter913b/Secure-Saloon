@@ -162,7 +162,7 @@ class ComponentsNavbar extends React.Component {
                 </DropdownItem>
                   <DropdownItem tag={Link} to="/register-page">
                     <i className="fa fa-list-ul" />
-                    Register
+                    Login
                   </DropdownItem>
                   <DropdownItem tag={Link} to="/landing-page">
                     <i className="fa fa-th-large" />

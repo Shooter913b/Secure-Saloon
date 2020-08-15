@@ -103,7 +103,7 @@ class RegisterPage extends React.Component {
                           alt="..."
                           src={require("assets/img/square-purple-1.png")}
                         />
-                        <CardTitle tag="h4">Register</CardTitle>
+                        <CardTitle tag="h4">Login</CardTitle>
                       </CardHeader>
                       <CardBody>
                         <Form className="form">
@@ -170,7 +170,7 @@ class RegisterPage extends React.Component {
                       </CardBody>
                       <CardFooter>
                         <Button className="btn-round" color="primary" size="lg">
-                          Get Started
+                          Sign In
                         </Button>
                       </CardFooter>
                     </Card>
