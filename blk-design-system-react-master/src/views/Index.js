@@ -49,7 +49,6 @@ class Index extends React.Component {
         <IndexNavbar />
         <div className="wrapper">
           <PageHeader />
-          <p>Hi</p>
 
           <div className="main">
 

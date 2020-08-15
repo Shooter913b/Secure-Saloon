@@ -16,7 +16,6 @@
 
 */
 import React from "react";
-
 // reactstrap components
 import { Container } from "reactstrap";
 
@@ -33,9 +32,15 @@ class PageHeader extends React.Component {
         <div className="squares square7" />
         <Container>
           <div className="content-center brand">
-            <h1 className="h1-seo">Secure ────── Street</h1>
+            <img
+                alt="..."
+                width="100" height="100"
+                className="img-fluid floating"
+                src={require("assets/img/Favicon.png")}
+              />
+            <h1 className="h1-seo" >Griffin</h1>
             <h5 className="d-none d-sm-block">
-                Hello! Welcome to Secure Street! We are a community based website. We made Secure Street for people in
+                Hello! Welcome to Griffin! We are a community based website. We made Griffin for people in
                 communities to be able to communicate to others their daily activities. It's basically a neighborhood like mini
                 blog for everyone to participate in! We know that since the covid outbreak, it has been certainly hard to
                 communitcate with others, so we developed this website for everyone to be able to talk about their daily needs.
@@ -49,7 +54,7 @@ class PageHeader extends React.Component {
                 you can sign up along with your family/neighbors: 1. Please carefully read the terms and conditions before you proceed,
                 and sign up. Have the rest of your community do the same. 2. Have you or your neighbors give in the info (log in username)
                 in a form we provide. 3. We will either approve of this form/deny which will be told to you via email. Once approved we will
-                give further info. Have fun with this website and welcome to Secure Street!
+                give further info. Have fun with this website and welcome to Griffin!
 
             </h5>
           </div>
