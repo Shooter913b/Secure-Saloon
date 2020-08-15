@@ -1,9 +1,9 @@
 
 
 import React from 'react'
-import { GoogleMap, LoadScript } from '@react-google-maps/api';
+import { GoogleMap, LoadScript,Marker,DrawingManager,InfoWindow  } from '@react-google-maps/api';
 
-const containerStyle = {
+const mapContainerStyle = {
   width: '1200px',
   height: '800px'
 };
@@ -13,17 +13,57 @@ const center = {
   lng:  -71.439
 };
 
+const position = {
+  lat: 42.4600,
+  lng: -71.439
+}
+const divStyle = {
+  background: `white`,
+  border: `1px solid #ccc`,
+  padding: 15
+}
+
+
+const onLoad = marker => {
+  console.log('marker: ', marker)
+}
+const onDblClick = marker => {
+  console.log('marker: ', marker)
+}
+const onRightClick	 =infoWindow => {
+  console.log('infoWindow: ', infoWindow)
+}
+
 function MyComponent() {
   return (
     <LoadScript
       googleMapsApiKey="AIzaSyCStTMJl2QcIuEkTRGJyu-1TIO_46TcMaA"
     >
       <GoogleMap
-        mapContainerStyle={containerStyle}
+        mapContainerStyle={mapContainerStyle}
         center={center}
         zoom={19}
+        id="marker-example"
+        id="InfoWindow-example"
+
+
       >
-        { /* Child components, such as markers, info windows, etc. */ }
+        {
+
+
+         }
+         <Marker
+      onLoad={onLoad}
+      position={position}
+    />
+    <InfoWindow
+     onLoad={onLoad}
+     position={position}
+   >
+     <div style={divStyle}>
+       <h1>InfoWindow</h1>
+     </div>
+   </InfoWindow>
         <></>
       </GoogleMap>
     </LoadScript>
