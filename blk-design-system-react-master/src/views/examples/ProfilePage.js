@@ -99,6 +99,8 @@ class ProfilePage extends React.Component {
       [stateName]: index
     });
   };
+
+  location.reload()
   render() {
     return (
       <>

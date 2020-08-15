@@ -33,7 +33,6 @@ import {
   Col
 } from "reactstrap";
 
-
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footer/Footer.js";
@@ -54,6 +53,7 @@ class LandingPage extends React.Component {
     document.body.classList.toggle("landing-page");
   }
 
+  location.reload()
 
   render() {
     return (
