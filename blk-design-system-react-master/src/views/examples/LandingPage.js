@@ -39,7 +39,7 @@ import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footer/Footer.js";
 
 import bigChartData from "variables/charts.js";
-
+import { GoogleMap, LoadScript } from '@react-google-maps/api';
 
 
 const mapStyles = {
