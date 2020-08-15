@@ -18,7 +18,18 @@
 import React from "react";
 
 // reactstrap components
-import { Container } from "reactstrap";
+import {
+  Button,
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  CardTitle,
+  ListGroupItem,
+  ListGroup,
+  Container,
+  Row,
+  Col } from "reactstrap";
 
 class PageHeader extends React.Component {
   render() {
@@ -34,7 +45,8 @@ class PageHeader extends React.Component {
         <Container>
           <div className="content-center brand">
             <h1 className="h1-seo">Secure ────── Street</h1>
-            <h5 className="d-none d-sm-block">
+            <h4 className="">
+            <Col lg="12">
                 Hello! Welcome to Secure Street! We are a community based website. We made Secure Street for people in
                 communities to be able to communicate to others their daily activities. It's basically a neighborhood like mini
                 blog for everyone to participate in! We know that since the covid outbreak, it has been certainly hard to
@@ -50,8 +62,9 @@ class PageHeader extends React.Component {
                 and sign up. Have the rest of your community do the same. 2. Have you or your neighbors give in the info (log in username)
                 in a form we provide. 3. We will either approve of this form/deny which will be told to you via email. Once approved we will
                 give further info. Have fun with this website and welcome to Secure Street!
+                </Col>
 
-            </h5>
+            </h4>
           </div>
         </Container>
       </div>
