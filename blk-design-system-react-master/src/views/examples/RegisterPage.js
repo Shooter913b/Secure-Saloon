@@ -74,13 +74,20 @@ class RegisterPage extends React.Component {
         "deg) rotateX(" +
         posY * -0.02 +
         "deg)"
+
+
     });
   };
 
-  
+
+
   render() {
+
     return (
+
       <>
+
+
         <IndexNavbar />
         <div className="wrapper">
           <div className="page-header">
@@ -141,7 +148,7 @@ class RegisterPage extends React.Component {
                               </InputGroupText>
                             </InputGroupAddon>
                             <Input
-                              placeholder="Email"
+                              placeholder="email"
                               type="text"
                               onFocus={e => this.setState({ emailFocus: true })}
                               onBlur={e => this.setState({ emailFocus: false })}
@@ -158,7 +165,7 @@ class RegisterPage extends React.Component {
                               </InputGroupText>
                             </InputGroupAddon>
                             <Input
-                              placeholder="Password"
+                              placeholder="password"
                               type="text"
                               onFocus={e =>
                                 this.setState({ passwordFocus: true })
