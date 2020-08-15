@@ -1,3 +1,5 @@
+
+
 import React from 'react'
 import { GoogleMap, LoadScript } from '@react-google-maps/api';
 
@@ -7,23 +9,11 @@ const containerStyle = {
 };
 
 const center = {
-  lat:-71.439,
-  lng: 42.46
+  lat:  42.4600 ,
+  lng:  -71.439
 };
 
 function MyComponent() {
-  const [map, setMap] = React.useState(null)
-
-  const onLoad = React.useCallback(function callback(map) {
-    const bounds = new window.google.maps.LatLngBounds();
-    map.fitBounds(bounds);
-    setMap(map)
-  }, [])
-
-  const onUnmount = React.useCallback(function callback(map) {
-    setMap(null)
-  }, [])
-
   return (
     <LoadScript
       googleMapsApiKey="AIzaSyCStTMJl2QcIuEkTRGJyu-1TIO_46TcMaA"
@@ -31,9 +21,7 @@ function MyComponent() {
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}
-        zoom={1}
-        onLoad={onLoad}
-        onUnmount={onUnmount}
+        zoom={19}
       >
         { /* Child components, such as markers, info windows, etc. */ }
         <></>
