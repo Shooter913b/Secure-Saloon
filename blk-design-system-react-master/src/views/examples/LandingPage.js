@@ -32,15 +32,16 @@ import {
   Row,
   Col
 } from "reactstrap";
+import MyComponent from "./Map.js";
 
 
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footer/Footer.js";
-
+import GoogleApiWrapper from "./Map.js";
 import bigChartData from "variables/charts.js";
 import { GoogleMap, LoadScript } from '@react-google-maps/api';
-
+process.env.REACT_NAV_LOGGING = false;
 
 const mapStyles = {
   width: '100%',
@@ -95,26 +96,10 @@ class LandingPage extends React.Component {
               <Row className="row-grid justify-content-between align-items-center text-left">
 <Col lg="6" md="6">
 
-                  <p className="text-white mb-3">
 
-                  </p>
-                  <div className="btn-wrapper mb-3">
-
-
-                  </div>
-                  <div className="btn-wrapper">
-                    <div className="button-container">
-
-
-
-
-                    </div>
-                  </div>
                 </Col>
 
-                <Col lg="4" md="5">
-              <p>Map</p>
-                </Col>
+<MyComponent/>
               </Row>
             </div>
           </div>
