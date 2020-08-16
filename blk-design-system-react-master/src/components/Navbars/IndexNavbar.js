@@ -108,7 +108,7 @@ class ComponentsNavbar extends React.Component {
                 alt="..."
                 width="35" height="35"
                 className="img-fluid floating"
-                src={require("assets/img/Favicon.png")}
+                src={require("assets/img/favicon.png")}
               />
               <span>Griffin </span>
             </NavbarBrand>
@@ -163,7 +163,7 @@ class ComponentsNavbar extends React.Component {
                   <i className="fa fa-bars" />
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-with-icons">
-                <DropdownItem tag={Link} to="/"> 
+                <DropdownItem tag={Link} to="/">
                   <i className="fa fa-home" />
                   Home
                 </DropdownItem>

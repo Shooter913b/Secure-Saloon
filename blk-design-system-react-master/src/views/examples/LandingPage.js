@@ -47,7 +47,7 @@ import Footer from "components/Footer/Footer.js";
 
 import bigChartData from "variables/charts.js";
 import { GoogleMap, LoadScript } from '@react-google-maps/api';
-import MyComponent from "./Map.js";
+import MapContainer from "./Map.js";
 import * as firebase from "firebase";
 import $ from "jquery"
 
@@ -149,12 +149,10 @@ class LandingPage extends React.Component {
 
 
 
-<Col xl="14">
-<Card>
-      <CardBody>
-<MyComponent/>
-</CardBody>
-    </Card>
+                  <Col>
+
+                    <MapContainer/>
+
 
                 </Col>
 
