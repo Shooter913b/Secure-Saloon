@@ -39,7 +39,7 @@ const Map = compose(
 )
     (props =>
         <GoogleMap
-            defaultZoom={19.5}
+            defaultZoom={19}
             center={center}
             mapContainerStyle={containerStyle}
             onClick={props.onMapClick}
