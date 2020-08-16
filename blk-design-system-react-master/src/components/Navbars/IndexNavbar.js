@@ -103,6 +103,13 @@ class ComponentsNavbar extends React.Component {
               tag={Link}
               id="navbar-brand"
             >
+            <img
+                margin="10"
+                alt="..."
+                width="35" height="35"
+                className="img-fluid floating"
+                src={require("assets/img/Favicon.png")}
+              />
               <span>Griffin </span>
             </NavbarBrand>
             <button
