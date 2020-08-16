@@ -17,7 +17,7 @@ const Forms = () => {
         <form>
           <FormGroup>
            <Label for="exampleText">Post</Label>
-           <Input type="textarea" name="text" id="exampleText"  />
+           <Input type="textarea" name="text" id="exampleText" />
          </FormGroup>
           <Button color="primary" type="submit">
             Post
@@ -27,5 +27,6 @@ const Forms = () => {
     </Card>
   );
 };
+
 
 export default Forms;
