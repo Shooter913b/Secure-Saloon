@@ -123,7 +123,7 @@ class ProfilePage extends React.Component {
                   <h1 className="profile-title text-left">Bob Scone</h1>
                   <h5 className="text-on-back">Bob</h5>
                   <p className="profile-description">
-                    BobScone123@gmail.com
+                    bobscone123@gmail.com
                   </p>
                   <div className="btn-wrapper profile pt-3">
                   </div>
@@ -194,7 +194,7 @@ class ProfilePage extends React.Component {
                               <tr>
                                 <td>Email/
                                 Address:</td>
-                                <td>BobScone123
+                                <td>bobscone123
                                 @gmail.com</td>
                                 <td>21 Oak Street, San Diego, CA</td>
                               </tr>
@@ -248,12 +248,15 @@ class ProfilePage extends React.Component {
                             </Col>
                           </Row>
                           <Button
+                            id="left"
                             className="btn-simple btn-icon btn-round float-right"
-                            color="primary"
-                            type="submit"
-                          >
+                            color="primary">
                             <i className="fa fa-check" />
                           </Button>
+                          <UncontrolledTooltip placement="left" target="left" delay={0}>
+                              Due to security reasons, you are not allowed
+                              to change the password of this account.
+                          </UncontrolledTooltip>
                         </TabPane>
                         <TabPane tabId="tab3">
                           <Table className="tablesorter" responsive>
@@ -264,13 +267,13 @@ class ProfilePage extends React.Component {
                             </thead>
                             <tbody>
                               <tr>
-                                <td>I am hosting a neighborhood party...</td>
+                                <td>I'm hosting a neighborhood bbq...</td>
                               </tr>
                               <tr>
-                                <td>Be careful, I found a fallen tree near...</td>
+                                <td>We are having a yardsale! Trying to...</td>
                               </tr>
                               <tr>
-                                <td>Anyone want to come over for a...</td>
+                                <td>So excited for the Junior Soccer...</td>
                               </tr>
                             </tbody>
                           </Table>
