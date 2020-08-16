@@ -3,7 +3,7 @@ import { GoogleMap, LoadScript, Marker, InfoWindow } from '@react-google-maps/ap
 
 const containerStyle = {
   width: '120vh',
-  height: '80vh'
+  height: '75vh'
 };
 
 const center = {

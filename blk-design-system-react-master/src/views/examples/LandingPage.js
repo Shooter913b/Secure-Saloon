@@ -113,8 +113,8 @@ class LandingPage extends React.Component {
               src={require("assets/img/cercuri.png")}
             />
             <div className="content-center">
-              <Row className="row-gridr">
-              <Col lg="2" md="1">
+              <Row className="row-grid justify-content-between">
+              <Col lg="3" md="1">
               <UncontrolledDropdown>
     <DropdownToggle caret data-toggle="dropdown">
         Filters
@@ -141,7 +141,7 @@ class LandingPage extends React.Component {
     </FormGroup>
     </form>
               </Col>
-              <Col lg="2" md="2">
+              <Col lg="3" md="2">
               <Button>Add Marker</Button>
               </Col>
                 </Row>
@@ -154,7 +154,7 @@ class LandingPage extends React.Component {
       <CardBody>
 <MyComponent/>
 </CardBody>
-    </Card>
+</Card>
 
                 </Col>
 
