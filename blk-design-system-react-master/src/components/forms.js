@@ -16,8 +16,8 @@ const Forms = () => {
       <CardBody>
         <form>
           <FormGroup>
-           <Label for="exampleText">Your Post</Label>
-           <Input type="textarea" name="text" id="exampleText" />
+           <Label for="exampleText">Post</Label>
+           <Input type="textarea" name="text" id="exampleText"  />
          </FormGroup>
           <Button color="primary" type="submit">
             Post
