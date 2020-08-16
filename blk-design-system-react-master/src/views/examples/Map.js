@@ -4,7 +4,7 @@ import { InfoWindow, withGoogleMap, withScriptjs, GoogleMap, Marker } from 'reac
 
 const containerStyle = {
   width: '120vh',
-  height: '80vh'
+  height: '75vh'
 };
 
 const center = {

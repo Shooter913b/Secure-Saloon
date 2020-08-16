@@ -41,7 +41,7 @@ class PageHeader extends React.Component {
         <div className="squares square5" />
         <div className="squares square6" />
         <div className="squares square7" />
-        <Container>
+
           <div className="content-center brand">
             <img
                 alt="..."
@@ -51,7 +51,9 @@ class PageHeader extends React.Component {
               />
             <h1 className="h1-seo" >Griffin</h1>
                         <Col md="12">
-            <h5 className="d-none d-sm-block">
+                        <Card>
+                              <CardBody>
+              <h4 className="d-none d-sm-block">
 
                 Hello! Welcome to Griffin! We are a community based website. We made Griffin for people in
                 communities to be able to communicate to others about there daily activities. It's basically a neighborhood-like mini
@@ -68,10 +70,12 @@ class PageHeader extends React.Component {
                 in a form we provide. 2. We will either approve of this form/deny which will be told to you via email. Once approved we will
                 give further info. Have fun with this website and welcome to Griffin!
 
-            </h5>
+            </h4>
+            </CardBody>
+            </Card>
             </Col>
           </div>
-        </Container>
+        
       </div>
     );
   }

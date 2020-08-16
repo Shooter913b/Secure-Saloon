@@ -16,6 +16,7 @@
 
 */
 import React from "react";
+import { Link } from "react-router-dom";
 import classnames from "classnames";
 // reactstrap components
 import {
@@ -237,7 +238,7 @@ class RegisterPage extends React.Component {
                         </Form>
                       </CardBody>
                       <CardFooter>
-                      <Button className="btn-round" color="primary" size="lg">
+                      <Button className="btn-round" color="primary" size="lg" tag={Link} to="/">
                         Sign In
                       </Button>
                       </CardFooter>
