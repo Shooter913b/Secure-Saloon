@@ -131,11 +131,11 @@ class LandingPage extends React.Component {
               <Button>Add Marker</Button>
               </Col>
                 </Row>
-                <Row className=" ">
+                <Row className="justify-content-md-center ">
 
 
 
-<Col lg="13" md="13">
+<Col xl="14">
 <Card>
       <CardBody>
 <MyComponent/>
