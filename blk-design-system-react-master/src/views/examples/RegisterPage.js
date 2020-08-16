@@ -37,10 +37,69 @@ import {
   Row,
   Col
 } from "reactstrap";
-
+import { BrowserRouter, Route, Switch,History } from "react-router-dom";
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footer/Footer.js";
+import * as firebase from "firebase";
+import $ from "jquery"
+function Redirect(){
+
+}
+var config = {
+  apiKey: "AIzaSyBcJJWse21pjooAyILJk_sYLd4kdmnJItw",
+ authDomain: "saloon-402e0.firebaseapp.com",
+ databaseURL: "https://saloon-402e0.firebaseio.com",
+ projectId: "saloon-402e0",
+ storageBucket: "saloon-402e0.appspot.com",
+ messagingSenderId: "490540225606",
+ appId: "1:490540225606:web:ac41cbe77f187d0f1e6647",
+ measurementId: "G-Q15BXVK72B"
+}
+if (!firebase.apps.length) {
+    firebase.initializeApp(config);
+}
+let auth = firebase.auth()
+let db = firebase.firestore()
+auth.onAuthStateChanged(function(user) {
+//if user exists, do the following
+    if (user) {
+      console.log(user.email);
+      //Checks and retrieves the user with same email as somebody else in the database already
+      db.collection('User').where("email", "==", user.email).get().then((snapshot) => {
+        //for every document found
+        snapshot.forEach((doc) => {
+          //checks type of user (organ or vol)
+            auth.history.push("/components");
+        });
+      });
+    }
+  });
+  // function signOut(){
+  //   firebase.auth().signOut().then(function() {
+  //     console.log('Signed Out');
+  //   }, function(error) {
+  //     console.error('Sign Out Error', error);
+  //   });
+  // }
+  //allows user to sign-in
+  function signIn(){
+    var username = $('#email').val();
+    var password = $('#password').val();
+    auth.signInWithEmailAndPassword(username, password).catch(function(error) {
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      window.alert(error);
+    });
+  }
+  $('#password').keypress(function (e) {
+   var key = e.which;
+   if(key == 13){
+      signIn();
+    }
+  });
+
+
 
 class RegisterPage extends React.Component {
   state = {

@@ -46,13 +46,25 @@ import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footer/Footer.js";
 
 import bigChartData from "variables/charts.js";
-import { GoogleMap, LoadScript } from '@react-google-maps/api'; import MyComponent from "./Map.js";
+import { GoogleMap, LoadScript } from '@react-google-maps/api';
+import MyComponent from "./Map.js";
+import * as firebase from "firebase";
+import $ from "jquery"
 
+var config = {
+  apiKey: "AIzaSyBcJJWse21pjooAyILJk_sYLd4kdmnJItw",
+ authDomain: "saloon-402e0.firebaseapp.com",
+ databaseURL: "https://saloon-402e0.firebaseio.com",
+ projectId: "saloon-402e0",
+ storageBucket: "saloon-402e0.appspot.com",
+ messagingSenderId: "490540225606",
+ appId: "1:490540225606:web:ac41cbe77f187d0f1e6647",
+ measurementId: "G-Q15BXVK72B"
+}
 
-const mapStyles = {
-  width: '100%',
-  height: '100%'
-};
+if (!firebase.apps.length) {
+    firebase.initializeApp(config);
+}
 class LandingPage extends React.Component {
   componentDidMount() {
     document.body.classList.toggle("landing-page");
@@ -60,6 +72,7 @@ class LandingPage extends React.Component {
   componentWillUnmount() {
     document.body.classList.toggle("landing-page");
   }
+
 
 
   render() {
