@@ -49,7 +49,7 @@ class PageHeader extends React.Component {
                 className="img-fluid floating"
                 src={require("assets/img/Favicon.png")}
               />
-            <h1 className="h1-seo" >Griffin</h1>
+            <h2 className="h1-seo" >Griffin</h2>
                         <Col md="12">
                         <Card>
                               <CardBody>
@@ -75,7 +75,7 @@ class PageHeader extends React.Component {
             </Card>
             </Col>
           </div>
-        
+
       </div>
     );
   }

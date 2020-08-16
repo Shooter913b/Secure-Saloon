@@ -238,7 +238,7 @@ class RegisterPage extends React.Component {
                         </Form>
                       </CardBody>
                       <CardFooter>
-                      <Button className="btn-round" color="primary" size="lg" tag={Link} to="/">
+                      <Button className="btn-round" color="primary" size="lg" tag={Link} to="/profile-page">
                         Sign In
                       </Button>
                       </CardFooter>
