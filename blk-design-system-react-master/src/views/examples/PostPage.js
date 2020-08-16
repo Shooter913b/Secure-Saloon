@@ -140,9 +140,9 @@ class ProfilePage extends React.Component {
               </Row>
             </Container>
           </div>
-        <Row>
-        <Col lg="3" md="3" >
-          <Card justify-content-md-center>
+        <Row className="justify-content-md-center">
+        <Col lg="2" md="2" >
+          <Card justify-content-md-center style={{height: '20rem'}}>
 
                 <CardBody>
                 <b>Everyone beware of the harsh weather! I heard there is gonna be some serious downpour! Get your raingear out.
@@ -150,30 +150,27 @@ class ProfilePage extends React.Component {
           </CardBody>
               </Card>
               </Col>
-              </Row>
-              <Row>
-              <Col lg="3" md="3">
-                <Card justify-content-md-center>
+
+              <Col lg="2" md="2">
+                <Card justify-content-md-center style={{height: '20rem'}}>
                       <CardBody>
                       <b>We are having a yardsale! Trying to sell some stuff in case anyone is interested! Come by anytime
                       during the day! Feel free to look around too.</b>
                 </CardBody>
                     </Card>
                     </Col>
-                    </Row>
-                    <Row>
-                    <Col lg="3" md="3">
-                      <Card justify-content-md-center>
+
+                    <Col lg="2" md="2">
+                      <Card justify-content-md-center style={{height: '20rem'}}>
                             <CardBody>
                             <b>Can anyone help me out with these logs? I can pay them $20 per hour to help me get these outta
                             the garage if anyone is interested.</b>
                       </CardBody>
                           </Card>
                           </Col>
-                          </Row>
-                          <Row>
-                          <Col lg="3" md="3">
-                            <Card justify-content-md-center>
+
+                          <Col lg="2" md="2">
+                            <Card justify-content-md-center style={{height: '20rem'}}>
                                   <CardBody>
                                   <b>So excited for the neighborhood game today! Anyone else gonna come to the game? :)</b>
                             </CardBody>
