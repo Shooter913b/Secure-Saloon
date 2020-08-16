@@ -30,7 +30,15 @@ import {
   ListGroup,
   Container,
   Row,
-  Col
+  Col,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  FormGroup,
+  Label,
+  Input,
+  FormText
 } from "reactstrap";
 
 // core components
@@ -91,10 +99,48 @@ class LandingPage extends React.Component {
               src={require("assets/img/cercuri.png")}
             />
             <div className="content-center">
-              <Row className="row-grid justify-content-between align-items-center text-left">
-<Col lg="12" md="12">
+              <Row className="row-gridr">
+              <Col lg="2" md="1">
+              <UncontrolledDropdown>
+    <DropdownToggle caret data-toggle="dropdown">
+        Filters
+    </DropdownToggle>
+    <DropdownMenu>
+        <DropdownItem>None</DropdownItem>
+        <DropdownItem>Caution</DropdownItem>
+        <DropdownItem>Events</DropdownItem>
+    </DropdownMenu>
+</UncontrolledDropdown>
+              </Col>
+              <Col lg="6" md="6">
+              <form>
+    <FormGroup>
 
+
+          <Input type="select" name="select" id="exampleSelect1">
+            <option>Caution</option>
+            <option>Events</option>
+
+          </Input>
+
+
+    </FormGroup>
+    </form>
+              </Col>
+              <Col lg="2" md="2">
+              <Button>Add Marker</Button>
+              </Col>
+                </Row>
+                <Row className="justify-content-md-center ">
+
+
+
+<Col xl="14">
+<Card>
+      <CardBody>
 <MyComponent/>
+</CardBody>
+    </Card>
 
                 </Col>
 

@@ -4,8 +4,8 @@ import React from 'react'
 import { GoogleMap, LoadScript,Marker,DrawingManager,InfoWindow  } from '@react-google-maps/api';
 
 const mapContainerStyle = {
-  width: '1200px',
-  height: '800px'
+  width: '120vh',
+  height: '80vh'
 };
 
 const center = {
@@ -61,7 +61,7 @@ function MyComponent() {
      position={position}
    >
      <div style={divStyle}>
-       <h1>InfoWindow</h1>
+       <h6 className="Info-Box">InfoWindow</h6>
      </div>
    </InfoWindow>
         <></>
