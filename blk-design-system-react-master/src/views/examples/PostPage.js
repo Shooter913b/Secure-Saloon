@@ -133,13 +133,7 @@ class ProfilePage extends React.Component {
             </Container>
           </div>
 
-          <div className="section">
-            <Container>
-              <Row className="justify-content-between">
-                <Forms />
-              </Row>
-            </Container>
-          </div>
+
         <Row className="justify-content-md-center">
         <Col lg="2" md="2" >
           <Card justify-content-md-center style={{height: '20rem'}}>
