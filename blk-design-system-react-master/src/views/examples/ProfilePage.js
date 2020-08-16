@@ -46,6 +46,7 @@ import {
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footer/Footer.js";
+import { Progress } from "reactstrap";
 
 const carouselItems = [
   {
@@ -102,6 +103,8 @@ class ProfilePage extends React.Component {
 
 
   render() {
+
+
     return (
       <>
         <IndexNavbar />
@@ -212,7 +215,16 @@ class ProfilePage extends React.Component {
                               </tr>
                             </tbody>
                           </Table>
+                          <Col lg="14" mg="14">
+                          <div className="progress-container">
+                         <span className="progress-badge">Number of Posts</span>
+                         <Progress max="100" value="10">
+                           <span className="progress-value">10</span>
+                         </Progress>
+                        </div>
+                        </Col>
                         </TabPane>
+
                         <TabPane tabId="tab2">
                           <Row>
                             <Label sm="3">•</Label>
@@ -285,6 +297,7 @@ class ProfilePage extends React.Component {
               </Row>
             </Container>
           </div>
+
           <div className="section">
             <Container>
               <Row className="justify-content-between">
@@ -296,6 +309,7 @@ class ProfilePage extends React.Component {
             </Container>
           </section>
           <Footer />
+
         </div>
       </>
     );
