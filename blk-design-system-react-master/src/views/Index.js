@@ -42,15 +42,14 @@ class Index extends React.Component {
   }
   componentWillUnmount() {
     document.body.classList.toggle("index-page");
-
   }
-
   render() {
     return (
       <>
         <IndexNavbar />
         <div className="wrapper">
           <PageHeader />
+        
 
           <div className="main">
 

@@ -163,7 +163,7 @@ class ComponentsNavbar extends React.Component {
                   <i className="fa fa-bars" />
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-with-icons">
-                <DropdownItem tag={Link} to="/"> 
+                <DropdownItem tag={Link} to="/">
                   <i className="fa fa-home" />
                   Home
                 </DropdownItem>
