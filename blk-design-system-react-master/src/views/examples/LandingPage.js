@@ -148,7 +148,12 @@ class LandingPage extends React.Component {
 
 
 
-  <MyComponent/>
+<Col xl="14">
+<Card>
+      <CardBody>
+<MyComponent/>
+</CardBody>
+    </Card>
 
                 </Col>
 
