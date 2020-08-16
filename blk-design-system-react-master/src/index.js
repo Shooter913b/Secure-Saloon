@@ -29,6 +29,7 @@ import RegisterPage from "views/examples/RegisterPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 import PostPage from "views/examples/PostPage.js";
 
+
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
@@ -55,6 +56,8 @@ ReactDOM.render(
         render={props => <ProfilePage {...props} />}
 
       />
+
+
       <Redirect from="/" to="/components" />
     </Switch>
   </BrowserRouter>,
