@@ -4,8 +4,8 @@ import React from 'react'
 import { GoogleMap, LoadScript,Marker,DrawingManager,InfoWindow  } from '@react-google-maps/api';
 
 const mapContainerStyle = {
-  width: '1200px',
-  height: '800px'
+  width: '120vh',
+  height: '80vh'
 };
 
 const center = {
