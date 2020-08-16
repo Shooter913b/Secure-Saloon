@@ -103,6 +103,8 @@ class ProfilePage extends React.Component {
 
 
   render() {
+
+
     return (
       <>
         <IndexNavbar />
@@ -214,6 +216,7 @@ class ProfilePage extends React.Component {
                             </tbody>
                           </Table>
                         </TabPane>
+
                         <TabPane tabId="tab2">
                           <Row>
                             <Label sm="3">•</Label>
@@ -262,11 +265,11 @@ class ProfilePage extends React.Component {
                         <Col lg="14" mg="14">
                         <div className="progress-container">
                        <span className="progress-badge">Number of Posts</span>
-                       <Progress max="100" value="5">
-                         <span className="progress-value">5</span>
+                       <Progress max="100" value="10">
+                         <span className="progress-value">10</span>
                        </Progress>
-                     </div>
-                     </Col>
+                      </div>
+                      </Col>
                         <TabPane tabId="tab3">
                           <Table className="tablesorter" responsive>
                             <thead className="text-primary">
