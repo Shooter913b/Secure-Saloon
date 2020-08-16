@@ -215,6 +215,14 @@ class ProfilePage extends React.Component {
                               </tr>
                             </tbody>
                           </Table>
+                          <Col lg="14" mg="14">
+                          <div className="progress-container">
+                         <span className="progress-badge">Number of Posts</span>
+                         <Progress max="100" value="10">
+                           <span className="progress-value">10</span>
+                         </Progress>
+                        </div>
+                        </Col>
                         </TabPane>
 
                         <TabPane tabId="tab2">
@@ -262,14 +270,6 @@ class ProfilePage extends React.Component {
                               to change the password of this account.
                           </UncontrolledTooltip>
                         </TabPane>
-                        <Col lg="14" mg="14">
-                        <div className="progress-container">
-                       <span className="progress-badge">Number of Posts</span>
-                       <Progress max="100" value="10">
-                         <span className="progress-value">10</span>
-                       </Progress>
-                      </div>
-                      </Col>
                         <TabPane tabId="tab3">
                           <Table className="tablesorter" responsive>
                             <thead className="text-primary">
