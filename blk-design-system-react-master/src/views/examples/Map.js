@@ -1,5 +1,6 @@
-import React from 'react'
-import { GoogleMap, LoadScript, Marker, InfoWindow } from '@react-google-maps/api';
+import React from 'react';
+import { compose, withStateHandlers } from "recompose";
+import { InfoWindow, withGoogleMap, withScriptjs, GoogleMap, Marker } from 'react-google-maps';
 
 const containerStyle = {
   width: '120vh',
@@ -10,7 +11,7 @@ const center = {
   lat:42.46,
   lng: -71.439
 };
-const position = {
+let position = {
   lat: 42.46,
   lng: -71.439
 }
@@ -23,35 +24,46 @@ const divStyle = {
   padding: 15
 }
 
+const Map = compose(
+    withStateHandlers(() => ({
+        isMarkerShown: false,
+        markerPosition: null
+      }), {
+        onMapClick: ({ isMarkerShown }) => (e) => ({
+            markerPosition: e.latLng,
+            isMarkerShown:true
+        })
+      }),
+    withScriptjs,
+    withGoogleMap
+)
+    (props =>
+        <GoogleMap
+            defaultZoom={19.5}
+            center={center}
+            mapContainerStyle={containerStyle}
+            onClick={props.onMapClick}
+        >
+            {props.isMarkerShown && <Marker position={props.markerPosition} />}
 
-function MyComponent() {
-  return (
-    <LoadScript
-      googleMapsApiKey="AIzaSyCStTMJl2QcIuEkTRGJyu-1TIO_46TcMaA"
-    >
-      <GoogleMap
-      id="marker-example"
-   mapContainerStyle={containerStyle}
-   zoom={19.5}
-   center={center}
-      >
-        { /* Child components, such as markers, info windows, etc. */ }
-        <></>
-        <Marker
-      onLoad={onLoad}
-      position={position}
-    />
-    <InfoWindow
-     onLoad={onLoad}
-     position={position}
-   >
-     <div style={divStyle}>
-       <h1>InfoWindow</h1>
-     </div>
-   </InfoWindow>
-      </GoogleMap>
-    </LoadScript>
-  )
+        </GoogleMap>
+    )
+
+export default class MapContainer extends React.Component {
+    constructor(props) {
+        super(props)
+    }
+
+    render() {
+        return (
+            <div style={{ height: '100%' }}>
+                <Map
+                    googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCStTMJl2QcIuEkTRGJyu-1TIO_46TcMaA"
+                    loadingElement={<div style={{ height: `100%` }} />}
+                    containerElement={<div style={{ height: `400px` }} />}
+                    mapElement={<div style={{ height: `100%` }} />}
+                />
+            </div>
+        )
+    }
 }
-
-export default React.memo(MyComponent)

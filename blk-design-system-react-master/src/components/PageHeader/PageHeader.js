@@ -47,7 +47,7 @@ class PageHeader extends React.Component {
                 alt="..."
                 width="100" height="100"
                 className="img-fluid floating"
-                src={require("assets/img/Favicon.png")}
+                src={require("assets/img/favicon.png")}
               />
             <h2 className="h1-seo" >Griffin</h2>
                         <Col md="12">
