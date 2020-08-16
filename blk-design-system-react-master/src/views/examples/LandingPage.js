@@ -51,6 +51,7 @@ import MyComponent from "./Map.js";
 import * as firebase from "firebase";
 import $ from "jquery"
 
+
 var config = {
   apiKey: "AIzaSyBcJJWse21pjooAyILJk_sYLd4kdmnJItw",
  authDomain: "saloon-402e0.firebaseapp.com",
